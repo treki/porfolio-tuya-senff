@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>COVID-19 Realtime Update</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="Covid19Tracker.css">
+   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=PT+Sans&family=Roboto:wght@100&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@600&family=Nunito+Sans:wght@200&family=PT+Sans&family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="preloader">
+  <div class="preloaderContent">
+    <div class="preloaderLoader"></div>
+    <div class="preloaderTxt">Please wait ...</div>
+  </div>
+</div>
+<div class="container">
+  <div class="statistics">
+    <div class="global">
+      <div class="globalTitle">COVID-19 Tracker</div>
+      <div class="cases">
+            <div class="globalCases">
+                 <h2></h2>
+                     <h3>Total Cases Worldwide</h3>
+                
+             </div>
+        <div class="globalDeaths">
+                 <h2></h2>
+                     <h3>Total Deaths Worldwide</h3>
+                   
+         </div>
+        <div class="globalRecovered">
+                  <h2></h2>
+                  <h3>Total Recovered Worldwide</h3>
+                  
+         </div>
+        </div>
+        <br>
+         <hr>
+    </div>
+    <input type="text" id="search" name="country" placeholder="Search Countries">
+        <select class="custom-select" id="select" onchange="changeOrder()">
+            <option selected="" disabled="">Sort By</option>
+            <option value="cases">Total Cases</option>
+            <option value="deaths">Total Deaths</option>
+            <option value="recovered">Total Recoveries</option>
+         </select>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Country</th>
+          <th>Cases</th>
+          <th>Deaths</th>
+          <th>Recovered</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+  <div class="arrow">
+    <div class="arrowUp">
+    </div>
+    <div class="arrowDown">
+    </div>
+  </div>
+</div>
+
+  <script src='https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/iamdustan-smoothscroll/0.4.0/smoothscroll.min.js'></script>
+<script  src="Covid19Tracker.js"></script>
+
+</body>
+</html>

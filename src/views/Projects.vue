@@ -1,4 +1,26 @@
 <template>
     <h1>Projects</h1>
-    <h2>Check out my Projects from</h2><a href="https://github.com/treki">github</a>
+   <div class="multicolumn">
+   <a href="">
+     <img src="../assets/ProjectsCovid.png">
+   </a>
+     <a href="">
+     <img src="../assets/ProjectCalculator.png">
+   </a>
+     </div>
+   
 </template>
+
+
+
+<style scoped>
+img{
+    width: 20pc;
+    height: 300px;
+}
+.multicolumn {
+  display: grid;
+  grid-template-columns: .5fr .5fr;
+  gap: .2rem;
+}
+</style>

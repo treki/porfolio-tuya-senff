@@ -5,6 +5,8 @@ import Contact from '../views/Contact.vue'
 import Resume from '../views/Resume.vue'
 
 
+
+
 const routes = [
   {
     path: '/',
@@ -12,7 +14,7 @@ const routes = [
     component: Home
   },
   {
-    path: '/projects',
+    path: '/Projects',
     name: 'Projects',
     component: Projects
   },
@@ -25,7 +27,9 @@ const routes = [
     path: '/resume',
     name: 'Resume',
     component: Resume,
-  }
+  },
+,
+
  
 ]
 
