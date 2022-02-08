@@ -25,7 +25,7 @@
         <h1>Objective</h1>
         <p>
           To obtain a full-time position in the web development field where I can
-          use my skills as a frontend developer skills. I thrive on bringing ideas to life. 
+          use my skills as a frontend developer. I thrive on bringing ideas to life. 
           I take pride in crafting innovative solutions with polished user experiences. 
           This whilst possessing a keen eye for design, accessibility, performance, and well-structured code.
         </p>
@@ -35,10 +35,9 @@
         <h1>Skills</h1>
         <div class="skills">
         <ul>
-                        <li><p>HTML5 & CSS3</p></li>
-                        <li><p>Javascript, Vue</p></li>
-                        <li><p>Git & GitHub</p></li>
-                        <li><p>Linux, Bash/Shell</p></li>
+                        <li><p>HTML5 , CSS3 , Javascript , Vue , Git & GitHub, Bootstrap , Bash/Shell </p></li>
+                        <li><p>Adobe Photoshop , Affinity Designer , Clear Communication , Highly Organaized</p></li>
+                        <li><p>Innovative Problem-solving , Attention to detail</p></li>
             
         </ul>
         </div>
@@ -73,22 +72,12 @@
 
       <section class="content-section">
         <h1>Experience</h1>
-        <div class="multicolumn">
-          <div class="experience-container">
-            <h2>
-              <span class="heavy-text">Software Developer</span> June 2019 –
-              Present
-            </h2>
-            <div>
-              <span>Silverline</span> | Omaha, Nebraska
-            </div>
-      
-          </div>
-         
-        </div>
+
+                <p> Building websites and apps that are responsive and usable</p>
+                <p> Bringing mock-ups to life using HTML, CSS, JavaScript</p>
+        
       </section>
 
-      
     </main>
   </body>
 </html>
@@ -173,8 +162,8 @@ ul {
 }
 .skills ul li{
     list-style-type: none;
-   float: left;
-   clear: right;
+   
+   
 }
 
 

@@ -1,0 +1,72 @@
+body{
+    
+    margin: 0;
+}
+p{
+    font-style: italic ;
+}
+h1, h3{
+    color:#ffffff;
+}
+.title{
+    padding-top: 120px;
+    font-weight: 200;
+    line-height: 1.2;
+    font-size: 4em;
+  }
+  .lead-typist{
+    font-size: 1.5rem;
+    font-weight: lighter;
+  }
+  .icon{
+      padding: 60px 10px ;
+  }
+  button{
+      cursor: pointer;
+      background-color: transparent; 
+      padding: .5rem 1rem;
+      font-size: 1.25rem;
+      line-height: 1.5;
+      border-radius: .3rem;
+      color: #ffffff;
+      
+  }
+button.about-me-button{
+        font-size: 25px;
+        border-color: #ffffff;
+        border-radius: 4px;
+        display: inline-block;
+        font-weight: 400;
+        margin-bottom: 30%;
+    }
+button.about-me-button:hover{
+    background: rgb(255, 255, 255);
+    color: black;
+}
+
+.background-color{
+	animation-name: backgroundColorPalette;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear; 
+	/* linear is enabled default, it’s not necessary to add it make it work but it can make your code more expressive */
+}
+
+@keyframes backgroundColorPalette {
+	0% {
+		background: #d0e584;
+	}
+	25% {
+		background: #f7e892;
+	}
+	50% {
+		background: #81ebe2;
+	}
+	75% {
+		background: #7ad5db;
+	}
+	100% {
+		background: #89dab8;
+	}
+}

@@ -1,11 +1,12 @@
 <template>
-    <h1>Projects</h1>
+    <h1 class="title">Projects</h1>
+    <h3 class="lead-typist">Check out my projectst at GitHUb</h3>
    <div class="multicolumn">
    <a href="">
-     <img src="../assets/ProjectsCovid.png">
+     <img src="../assets/projects/ProjectsCovid.png">
    </a>
      <a href="">
-     <img src="../assets/ProjectCalculator.png">
+     <img src="../assets/projects/ProjectCalculator.png">
    </a>
      </div>
    
@@ -14,10 +15,13 @@
 
 
 <style scoped>
+
 img{
     width: 20pc;
     height: 300px;
+    border-radius: 15px;
 }
+
 .multicolumn {
   display: grid;
   grid-template-columns: .5fr .5fr;
