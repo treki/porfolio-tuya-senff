@@ -1,25 +1,119 @@
-body{
-    
-    margin: 0;
+html, body{
+    font-size: 100%;
+    margin: 0px;
+    padding: 0px;
 }
+.background-color{
+	animation-name: backgroundColorPalette;
+	animation-duration: 8s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+    animation-timing-function: linear; 
+    height: 100vh;
+	/* linear is enabled default, it’s not necessary to add it make it work but it can make your code more expressive */
+}
+
+@keyframes backgroundColorPalette {
+    0% {
+		background: #ffd6ff;
+	}
+    25% {
+		background: #e7c6ff;
+	}
+	50% {
+		background: #c8b6ff;
+	}
+	75% {
+		background: #b8c0ff;
+	}
+	100% {
+		background: #bbd0ff;
+	}
+}
+
 p{
     font-style: italic ;
 }
-h1, h3{
-    color:#ffffff;
-}
+
+
 .title{
     padding-top: 120px;
     font-weight: 200;
     line-height: 1.2;
     font-size: 4em;
+    color: #080808;
+  }
+  .title-second{
+    padding-top: 120px;
+    font-weight: 200;
+    line-height: 1.2;
+    font-size: 2em;
+    color: #141414;
+  }
+  .title-third{
+    padding-top: 120px;
+    font-weight: 200;
+    line-height: 1.2;
+    font-size: 2em;
+    color: #161616;
+ 
+  }
+  .about-me{
+      background-color: #f1f1f1;
+  }
+  .about-me-content{
+      color: #000000;
+      font-weight: 100;
+      line-height: 1.5;
+      margin: 50px;
+      padding-bottom: 3rem;
+  }
+  .recent-projects{
+      background-color: #3a3030;
   }
   .lead-typist{
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: lighter;
+    color: #0c0c0c;
   }
   .icon{
       padding: 60px 10px ;
+  }
+  #text-center{
+  text-align: center!important;
+}
+/* card */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+       
+  }
+.card {
+    margin: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+   width: fit-content;
+    border-radius: 5px;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+    
+  .card-body {
+    padding: 2px 28px;
+    
+  }
+  .card-text{
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,;
+      font-size: 25px;
+      height: 150px;
   }
   button{
       cursor: pointer;
@@ -28,45 +122,91 @@ h1, h3{
       font-size: 1.25rem;
       line-height: 1.5;
       border-radius: .3rem;
-      color: #ffffff;
+      color: #0c0c0c;
       
   }
-button.about-me-button{
+button.my-button{
         font-size: 25px;
-        border-color: #ffffff;
+        border-color: #d1cfcf;
         border-radius: 4px;
         display: inline-block;
         font-weight: 400;
-        margin-bottom: 30%;
+        margin-bottom: 7rem;
+      display: inline-table;
+       
     }
-button.about-me-button:hover{
+    a button{
+        
+    }
+.my-button-projects{
+    float: left;
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    color: gray;
+    font-size: 27px;
+    
+}
+.my-button-projects img{
+    width: 35px;
+    padding-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+button.my-button-projects:hover{
+    background-color: rgb(192, 192, 192);
+}
+button.my-button:hover{
     background: rgb(255, 255, 255);
     color: black;
 }
+/*card{
+    position: relative;
+    display: grid;
+    grid-template-columns: .5fr .5fr;
+    gap: .2rem;
+    min-width: 0;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem!important;
+}
+*/
 
-.background-color{
-	animation-name: backgroundColorPalette;
-	animation-duration: 5s;
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
-	animation-timing-function: linear; 
-	/* linear is enabled default, it’s not necessary to add it make it work but it can make your code more expressive */
+
+ 
+  
+
+@media (min-width: 375px) {
+    body {
+        font-size: .7rem;
+    }
+    img .icon{
+        width: 1rem;
+    }
+}
+@media (min-width: 640px) { 
+    body {
+        font-size:1.2rem;
+    } 
+    img{
+        width: 3rem;
+    }
+}
+@media (min-width:960px) { 
+    body {
+        font-size:1.4rem;
+    } 
+    img{
+        width: 1rem;
+    }
+}
+@media (min-width:1100px) { 
+    body {
+        font-size: 2rem;
+    } 
+    img{
+        width: 4rem;
+       
+    }
 }
 
-@keyframes backgroundColorPalette {
-	0% {
-		background: #d0e584;
-	}
-	25% {
-		background: #f7e892;
-	}
-	50% {
-		background: #81ebe2;
-	}
-	75% {
-		background: #7ad5db;
-	}
-	100% {
-		background: #89dab8;
-	}
-}
+

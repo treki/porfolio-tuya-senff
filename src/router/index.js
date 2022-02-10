@@ -7,6 +7,7 @@ import Resume from '../views/Resume.vue'
 
 
 
+
 const routes = [
   {
     path: '/',
@@ -28,7 +29,7 @@ const routes = [
     name: 'Resume',
     component: Resume,
   },
-,
+
 
  
 ]
