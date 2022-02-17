@@ -4,6 +4,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Karla&family=Source+Sans+3:wght@500&display=swap" rel="stylesheet">
 <Navbar />
 
+
   <router-view/>
 </template>
 
@@ -14,7 +15,7 @@ import Navbar from '@/components/Navbar.vue'
 export default {
   
   components: {
-    Navbar
+    Navbar,
 
   }
 }

@@ -12,23 +12,22 @@
             </a>   
               
           </div>
-          <div class="my-button" >
-            <a href="#aboutme"><button class="my-button">More about me</button></a>   
-          </div>
+          
+            <a href="#aboutme" class="button2">More about me</a>   
+          
 </div>
   <div class="about-me" id="text-center">
-    <h2 class="title-second" id="aboutme">About Me</h2>
+    <h2 class="title-two" id="aboutme">About Me</h2>
     <h3 class="about-me-content">
       My name is Tuya Senff. I thrive on bringing ideas to life. 
       I take pride in crafting innovative solutions with polished user experiences. 
       In my free time I like working on open source projects.</h3>
-          <div class="my-button" >
-            <a href="https://docs.google.com/document/d/1ueOS-b_Oom2F544qBvKYseWgjSAWwxTWtovp4EugRZs/edit?usp=sharing" target="_blank"><button class="my-button">Resume</button></a>   
-          </div>
+            <a href="https://docs.google.com/document/d/1ueOS-b_Oom2F544qBvKYseWgjSAWwxTWtovp4EugRZs/edit?usp=sharing" target="_blank" class="button3">My resume</a>   
+ <br><br><br>
   </div>
 
-  
-    <h2 class="title-third" id="text-center">Recent Projects</h2>
+  <div class="recent-projects">
+    <h2 class="title-two" id="text-center">Recent Projects</h2>
     <div class="row">
       <div class="column">
     <div class="card">
@@ -86,16 +85,37 @@
             <p class="card-text">November 2021</p>
           </div>   
     </div>
-      </div>
+ 
+
+ <div id="text-center">
+            <a href=" " target="_blanck"><router-link to="/projects" class="button3">My Projects</router-link> </a>
+             <br><br><br>
+          </div>
     </div>
-   <div class="about-me" id="text-center">
-  <h2 class="title-fourth" id="text-center">Get In Touch</h2>
-  <p>
+         </div>
+</div>
+<footer>
+   <div class="footer" id="text-center">
+  <h2 class="title-two" id="text-center">Get In Touch</h2>
+  <p class="about-me-content">
     I'm currently looking for full-time Front-end Developer opportunities! 
     If you know of any positions available, if you have any questions, or if you just want to say hi,
-     please feel free to email me at, tuya.senff@gmail.com.</p>
-    </div>
+     please feel free to email me at <a href="mailto: tuya.senff@gmail.com">tuya.senff@gmail.com</a></p>
+ 
+    <div id="text-center">
+            <a href=" " target="_blanck"><router-link to="/contact" class="button3">Get in Contact</router-link> </a>
+             <br><br><br>
+            <p>made by me</p>
+          </div>
+             </div>
+</footer>  
+
 </template>
+
+
+
+
+
 
 <script>
 import Navbar from '@/components/Navbar.vue'
@@ -103,15 +123,52 @@ import Navbar from '@/components/Navbar.vue'
 export default {
   name: 'Home',
   components: {
-    Navbar,
-  
+    Navbar
   },
   
 }
 </script>
 <style scoped>
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    
+    font-size: 100%;
+    margin:0;
+   padding:0;
+   height:100%;
+   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+   
+}
+.background-color{
+	animation-name: backgroundColorPalette;
+	animation-duration: 8s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+    animation-timing-function: linear; 
+    height: 100vh;
+	/* linear is enabled default, it’s not necessary to add it make it work but it can make your code more expressive */
+}
 
-
+@keyframes backgroundColorPalette {
+    0% {
+		background: #ffd6ff;
+	}
+    25% {
+		background: #e7c6ff;
+	}
+	50% {
+		background: #c8b6ff;
+	}
+	75% {
+		background: #b8c0ff;
+	}
+	100% {
+		background: #bbd0ff;
+	}
+}
 
 
 </style>

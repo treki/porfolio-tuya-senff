@@ -1,7 +1,6 @@
 <template>
-<div id="text-center">
-
-    <h1 class="title">Projects</h1>
+<div class="background">
+    <h3 class="title" id="text-center">Projects</h3>
     
    <!--<div class="multicolumn">-->
    
@@ -64,7 +63,7 @@
     </div>
       </div>
     </div>
-</div>
+
       
       <div class="column">
         <div class="card">
@@ -129,7 +128,7 @@
       <div class="card-body">
         <h3 class="card-title">Documentation Page</h3>
           <p class="card-text">
-            A responsive documentation page, I used HTML5 and CSS to.</p>
+            A responsive documentation page, I used HTML5 and CSS to style the page.</p>
                     <div class="my-button" >
             <a href="https://github.com/treki/documentationPage/archive/master.zip" target="_blank">
             <button type="button" class="my-button-projects"> 
@@ -152,11 +151,90 @@
           </div>   
     </div>
       </div>
+
+          <div class="column">
+        <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">Color Picker</h3>
+          <p class="card-text">
+           This color picker gives users many different ways of picking out colors. 
+           The color picker provides the color values in hexadecimal and RGB.            
+           </p>
+                    <div class="my-button" >
+            <a href="https://github.com/treki/palettehex/archive/master.zip" target="_blank">
+            <button type="button" class="my-button-projects"> 
+              <img src="../assets/slice1.png"/>
+                <span>Clone Project</span>
+              </button></a>   
+           </div>
+
+            <div class="my-button" >
+            <a href="https://github.com/treki/palettehex" target="_blank">
+            <button type="button" class="my-button-projects"> 
+              <img src="../assets/slice1.png"/>
+                <span>Repo</span>
+              </button></a>   
+           </div>
+      <br><br><hr>
+            <h5>Languages:</h5><p class="languages">
+              JavaScript, HTML, CSS</p>
+            <p class="card-text">February 2016</p>
+          </div>   
+    </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">Sabrina | Broker</h3>
+          <p class="card-text">
+           A responsive website I heavily used Bootstrap and Javascript for a real estate agent.             
+           </p>
+                    <div class="my-button" >
+            <a href="https://github.com/treki/sabrina/archive/master.zip" target="_blank">
+            <button type="button" class="my-button-projects"> 
+              <img src="../assets/slice1.png"/>
+                <span>Clone Project</span>
+              </button></a>   
+           </div>
+
+            <div class="my-button" >
+            <a href="https://github.com/treki/sabrina" target="_blank">
+            <button type="button" class="my-button-projects"> 
+              <img src="../assets/slice1.png"/>
+                <span>Repo</span>
+              </button></a>   
+           </div>
+      <br><br><hr>
+            <h5>Languages:</h5><p class="languages">
+              Bootstrap,JavaScript, HTML, CSS</p>
+            <p class="card-text">February 2016</p>
+          </div>   
+    </div>
+      </div>
+</div>
 </template>
 
+<script>
+import Navbar from '@/components/Navbar.vue'
 
+export default {
+  name: 'projects',
+  components: {
+    Navbar,
+  },
+  
+}
+</script>
 
 <style scoped>
 
+.background{
+		background: #4b5b7e;
+}
+.column {
+  
+    width: 50%;
+}  
 
 </style>

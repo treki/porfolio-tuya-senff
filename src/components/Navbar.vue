@@ -26,7 +26,7 @@ export default {
 #nav a {
   font-size: 1.5rem;
   text-decoration: none;  
-  color: #0c0c0c;
+  color: #ffffff;
   padding: 20px 20px;
   float: right;
   line-height: 30px;
@@ -34,12 +34,12 @@ export default {
 
 }
 #nav a:hover{
-  color: #263f8f;
+  color: #474747;
 }
 
 
 #nav a.router-link-exact-active {
-  background-color: #728de6;
+  background-color: #474747;
   border-radius: 8px;
   
 }
